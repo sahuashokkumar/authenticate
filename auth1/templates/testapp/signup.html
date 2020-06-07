@@ -1,0 +1,17 @@
+{% extends "testapp/base.html "%}
+
+{% block childblock%}
+<div class="jumbotron">
+  <div class="container">
+    <h1>signup to enjoy</h1>
+<form  method="post">
+  {{form.as_p}}
+  {%csrf_token%}
+  <input type="submit" class='btn btn-primary' value="signup">
+
+</form>
+  </div>
+
+</div>
+
+{% endblock %}
